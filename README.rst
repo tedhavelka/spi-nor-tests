@@ -11,3 +11,7 @@ Mikroe click board header has a reset pin itself but this pin does not connect t
      gpios = <&gpio0 0 GPIO_ACTIVE_LOW>;       
      is-output;
  };
+
+Failing the above in snippet (1) may be possible to add a property value pair like this to the flash device node::
+
+    gpios = <&gpio1 6 GPIO_ACTIVE_LOW>;
